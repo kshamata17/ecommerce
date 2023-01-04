@@ -21,6 +21,7 @@ nav{
     justify-content: center;
     padding: 5px;
     transition: all .5s ease;
+    /* background: gray; */
 }
 nav a{
     text-decoration: none;
@@ -224,7 +225,8 @@ nav img{
     color: white;
 }
 .wrapper2{
-    margin-top: 20px;
+    margin-top: 120px;
+    
 }
 .wrapper2 h3{
     color: orange;
@@ -247,38 +249,199 @@ nav img{
     font-size: 15px;
     border-radius: 5px;
 }
-.wrapper2 .card-section{
-    position: relative;
+.wrapper2 button:hover{
+    cursor: pointer;
 }
-.wrapper2 .card-section .card-bg{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    padding: 10px;
+.cont{
+   background: #ffe7d6; 
+   padding: 20px;
+}
+.container{
+    margin: 50px;
+    /* max-width: 1500px; */
     background: white;
-    
+    width: 95%;
+    padding: 80px 0;
+    overflow: hidden;
 }
-.wrapper2 .card-section .card{
+
+.container .main-card{
+    margin: 20px;
+    width: 200%;
+    /* background: gray; */
     display: flex;
-    flex-direction: column;
-    margin: 10px;
-    /* height: 400px;
-    width: 400px; */
-    /* background: orange; */
-    
+    justify-content: center;
+    transition: all 1s ease;
 }
-.wrapper2 .card-section .card .image{
-    position: relative;
-    height: auto;
-    width: auto;
-    /* height: 400px;
-    width: 400px; */
+.wrapper2 .cards .content .img{
+    height: 300px;
+    /* width: 100px; */
+    margin-bottom: 14px;
+    /* background: red; */
+    /* border-radius: 50%; */
 }
-.card img{
-    position: absolute;
+.wrapper2 .cards .content .img img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    /* border-radius: 20%; */
+    /* background: orange; */
+    padding: 3px;
+    /* border: 3px solid white; */
 }
-.card .text{
+#two:checked ~ .main-card{
+    margin-left: -50%;
+}
+.main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    /* flex-wrap: wrap; */
+}
+.main-card .cards .card{
+    background: white;
+    height: 400px;
+    width: calc(100% / 3 - 10px);
+    /* padding: 30px; */
+    /* border-radius: 24px; */
+    margin: 10px;
+    border: 1px solid rgb(214, 211, 211);
+    
+}
+.main-card .cards .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 2px 2px rgb(211, 210, 210);
+}
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
+}
+.card .content .details .rating{
+    font-size: 20px;
+    color: orange;
+    display: flex;
+    margin: 0px 10px 10px 10px;
+}
+.card .content .details .rating .price{
+    background: orange;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.checked {
+    color: orange;
+
+}
+.star{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 60px;
+    /* right: 0; */
+}
+.wrapper2 .button2{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.wrapper2 .button2 label{
+    height: 15px;
+    width: 15px;
+    background: gray;
+    margin: 0 4px;
+    border-radius: 50%;
+    /* transition: all 0.5s ease; */
+
+}
+.wrapper2 .button2 label.active{
+    background: orange;
+}
+#one:checked ~ .wrapper2 .button2 label.one{
+    background: gray;
+}
+#two:checked ~ .wrapper2 .button2 label.two{
+    background: gray;
+}
+#two:checked ~ .wrapper2 .button2 label.one{
+    background: gray;
+}
+#one:checked ~ .wrapper2 .button2 label.two{
+    background: gray;
+}
+input[type="radio"]{
+    display: none;
+}
+@media (max-width: 768px) {
+    .main-card .cards{
+        width: calc(100% / 2 - 10px);
+        margin: 20px 0 10px 0;
+    }
+}
+@media (max-width: 600px) {
+    .main-card .cards{
+        width: 100%;
+        /* margin: 20px 0 10px 0; */
+    }
+}
+.wrapper3{
+    margin-top: 120px;
+   
+}
+.wrapper3 h3{
+    color: orange;
+    text-align: center; 
+}
+.wrapper3 h1{
+    color: black;
+    text-align: center;
+}
+.stat-cont{
+    display: flex;
+    background: #ffe7d6;
+}
+.stat-cont .icon{
+    height: 50px;
+    width: 50px;
+    background: white;
+    margin: auto;
+    margin-top: 20px;
+    /* width: 50%; */
+  /* border: 3px solid green; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(197, 195, 195);
+}
+.stat-cont .icon i{
+    margin: auto;
+    margin-top: 8px;
+}
+.stat-cont .cont1{
+    margin-top: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.cont1 h3{
+    margin-top: 20px;
+}
+.cont1 p{
+    font-size: 15px;
+}
+.footer{
+    display: flex;
+    margin: 50px;
+}
+.footer li{
+    list-style: none;
+}
+.footer li a{
+    text-decoration: none;
+}
+.footer .center{
+    display: flex;
+    margin: 0 20px 0 20px;
 }
