@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Passions+Conflict&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: white;
+}
+nav{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    /* right: 0; */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all .5s ease;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+nav img{
+    height: 80px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    color: orange;
+    font-size: 28px;
+    margin-right: 3px;
+}
+.logo span{
+    display: flex;
+    flex-direction: column;
+}
+.logo span p{
+    color: orange;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: 'Lobster', cursive;
+    font-family: 'Passions Conflict', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    rotate: -10deg;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.navbar .rightbar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* margin-left: 200px; */
+    
+}
+/* .navbar .rightbar li{
+    justify-content: center;
+} */
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .5s ease;
+}
+.navbar a:hover{
+    color: orange;
+}
+.navbar a.active{
+    color: orange;
+}
+.menu .fa-solid{
+    font-size: 35px;
+    color: orange;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+} 
+@media (max-width:1280px){
+    nav{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+@media (max-width:1090px){
+    .menu .fa-solid{
+        display: block;
+    }
+    .navbar{
+        
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        background: rgb(194, 223, 213);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 5px;
+        transition: all .5s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0 25px;
+        transition: all .5s ease;
+    }
+    .navbar a:hover{
+        color: #CB0C43;
+        transform: translateX(10px);
+    }
+    .navbar a.active{
+        color: #CB0C43;
+    }
+    .navbar.open{
+        right: 2%;
+    }
+}
+.wrapper{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    /* position: relative; */
+}
+.wrapper{
+    content: "";
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    /* position: absolute; */
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    /* bottom: 0px; */
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.section1{
+    margin: 50px;
+}
+.section1 .upper{
+    color: white;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+}
+.section1 h1 #unique{
+    color: orange;
+    font-size: 100px;
+    /* animation: .5s glow ease-in-out; */
+}
+/* @keyframes glow{
+    from{
+
+    }
+} */
+.section1 .middle{
+    margin-top: 50px;
+    /* background: gray; */
+    /* opacity: .8; */
+}
+.section1 .middle p{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+.section1 .middle #off{
+    color: orange;
+}
+.section1 .lower{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.section1 .lower button{
+    justify-content: center;
+    text-align: center;
+    background:transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.section1 .lower button:hover{
+    background: transparent;
+    color: orange;
+    border: 1px solid orange;
+}
+.section1 .lower2{
+    margin: 20px;
+    text-align: center;
+    color: white;
+    
+}
+.section1 .lower2 p{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+.wrapper2{
+    margin-top: 20px;
+}
+.wrapper2 h3{
+    color: orange;
+    text-align: center; 
+}
+.wrapper2 h1{
+    color: black;
+    text-align: center;
+}
+.wrapper2 .button{
+    margin-top: 20px;
+    text-align: center;
+}
+.wrapper2 button{
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.wrapper2 .card-section{
+    position: relative;
+}
+.wrapper2 .card-section .card-bg{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    
+}
+.wrapper2 .card-section .card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* height: 400px;
+    width: 400px; */
+    /* background: orange; */
+    
+}
+.wrapper2 .card-section .card .image{
+    position: relative;
+    height: auto;
+    width: auto;
+    /* height: 400px;
+    width: 400px; */
+}
+.card img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card .text{
+    text-align: center;
+}
