@@ -160,7 +160,7 @@ nav img{
     background-color: rgba(0, 0, 0, 0.25);
 }
 .section1{
-    margin: 50px;
+    /* margin: 50px; */
 }
 .section1 .upper{
     color: white;
@@ -224,6 +224,7 @@ nav img{
     font-weight: 600;
     color: white;
 }
+
 .wrapper2{
     margin-top: 120px;
     
@@ -253,79 +254,78 @@ nav img{
     cursor: pointer;
 }
 .cont{
-   background: #ffe7d6; 
+   /* background: #ffe7d6;  */
    padding: 20px;
 }
 .container{
-    margin: 50px;
-    /* max-width: 1500px; */
-    background: white;
-    width: 95%;
-    padding: 80px 0;
+    width: 100%;
     overflow: hidden;
 }
 
 .container .main-card{
-    margin: 20px;
-    width: 200%;
+    margin: 30px;
+    /* width: 200%; */
     /* background: gray; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     transition: all 1s ease;
 }
-.wrapper2 .cards .content .img{
-    height: 300px;
-    /* width: 100px; */
-    margin-bottom: 14px;
-    /* background: red; */
-    /* border-radius: 50%; */
-}
-.wrapper2 .cards .content .img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* border-radius: 20%; */
-    /* background: orange; */
-    padding: 3px;
-    /* border: 3px solid white; */
-}
-#two:checked ~ .main-card{
-    margin-left: -50%;
-}
-.main-card .cards{
-    width: calc(100% / 2 - 10px);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 10px;
-    /* flex-wrap: wrap; */
-}
 .main-card .cards .card{
-    background: white;
+    background: #ffe7d6;
     height: 400px;
     width: calc(100% / 3 - 10px);
     /* padding: 30px; */
     /* border-radius: 24px; */
     margin: 10px;
-    border: 1px solid rgb(214, 211, 211);
+    /* border: 1px solid rgb(214, 211, 211); */
     
 }
 .main-card .cards .card:hover{
     transform: translateY(-10px);
     box-shadow: 2px 2px 2px 2px rgb(211, 210, 210);
 }
-.card .content .details .name{
+.wrapper2 .main-card .cards .content .img{
+    height: 300px;
+    /* width: 100px; */
+    margin-bottom: 14px;
+}
+.wrapper2 .main-card .cards .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 10%; */
+    /* background: orange; */
+    padding: 3px;
+    /* border: 3px solid white; */
+}
+/* #two:checked ~ .main-card{
+    margin-left: -50%;
+} */
+.main-card .cards{
+    /* width: calc(100% / 2 - 10px); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    /* flex-wrap: wrap; */
+}
+.main-card .card .content .details{
+    background: white;
+}
+
+.main-card .card .content .details .name{
     font-size: 20px;
     font-weight: 500;
     text-align: center;
 }
-.card .content .details .rating{
+.main-card .card .content .details .rating{
     font-size: 20px;
     color: orange;
     display: flex;
     margin: 0px 10px 10px 10px;
 }
-.card .content .details .rating .price{
+.main-card .card .content .details .rating .price{
     background: orange;
     border-radius: 5px;
     color: white;
@@ -358,24 +358,24 @@ nav img{
     /* transition: all 0.5s ease; */
 
 }
-.wrapper2 .button2 label.active{
+/* .wrapper2 .button2 label.active{
     background: orange;
 }
 #one:checked ~ .wrapper2 .button2 label.one{
-    background: gray;
+    background: orange;
 }
 #two:checked ~ .wrapper2 .button2 label.two{
     background: gray;
 }
 #two:checked ~ .wrapper2 .button2 label.one{
-    background: gray;
+    background: orange;
 }
 #one:checked ~ .wrapper2 .button2 label.two{
     background: gray;
 }
 input[type="radio"]{
     display: none;
-}
+} */
 @media (max-width: 768px) {
     .main-card .cards{
         width: calc(100% / 2 - 10px);
